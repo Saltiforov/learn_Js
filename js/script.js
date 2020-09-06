@@ -1,30 +1,52 @@
 "use strict"
-//callback - функции
 
-function first(lang,callback){
-    //do something
-    // setTimeout(function (){
-    //     console.log(1)
-    // },500)
-    console.log(`я учу: ${lang}`);
-    callback();
+// const options = {
+//     name: 'test',
+//     width: 1024,
+//     height: 1024,
+//     colors: {
+//         border:'black',
+//         bg:'red'
+//     },
+//     makeTest: function (){
+//         console.log('test')
+//     }
+// }
+
+// console.log(options["name"])
+//
+// delete options.name;
+//
+// console.log(options)
+
+// Перебор всех ключей обьекта когда мы их знаем
+
+// let counter = 0;
+// for (let key in options){
+//     if(typeof(options[key]) === 'object'){
+//         for (let i in options[key]){
+//             console.log(`Свойство ${i} имеет значение ${options[key][i]}`)
+//             counter++
+//         }
+//     }else {
+//         console.log(`Свойство ${key} имеет значение ${options[key]}`)
+//         counter++
+//     }
+// }
+// console.log(counter)
+// options.makeTest();
+// console.log(Object.keys(options).length);
+
+// const {border,bg} = options.colors // диструктаризация обьекта
+// console.log(bg)
+
+const answerBD = {
+    caunt:{},
+    description:{}
 }
+const answer = +prompt('Введите количество товара которое хотите купить', ''),
+      answerDescr =prompt('Что это?', '')
+answerBD.caunt = answer
+answerBD.description = answerDescr
 
-function second(){
-    console.log(2)
-}
-
-first('Python', function (){
-    console.log('Я сделал callback function')
-});
-second();
-
-
-function learnJS(lang,callback){
-    console.log(`я учу: ${lang}`);
-    callback();
-}
-function done(){
-    console.log('Я прошел данный урок')
-}
-learnJS('JavaScript',done);
+console.log(answerBD)
