@@ -1,52 +1,69 @@
 "use strict"
 
-// const options = {
-//     name: 'test',
-//     width: 1024,
-//     height: 1024,
-//     colors: {
-//         border:'black',
-//         bg:'red'
-//     },
-//     makeTest: function (){
-//         console.log('test')
-//     }
-// }
+const arr = [1,222,131,6,8];
+arr.sort(compareNum)
+console.log(arr)
 
-// console.log(options["name"])
-//
-// delete options.name;
-//
-// console.log(options)
+function compareNum(a,b){
+    return a - b;
+} // используеться как callback функция для сортировки массива (числового)
 
-// Перебор всех ключей обьекта когда мы их знаем
 
-// let counter = 0;
-// for (let key in options){
-//     if(typeof(options[key]) === 'object'){
-//         for (let i in options[key]){
-//             console.log(`Свойство ${i} имеет значение ${options[key][i]}`)
-//             counter++
-//         }
-//     }else {
-//         console.log(`Свойство ${key} имеет значение ${options[key]}`)
-//         counter++
-//     }
-// }
-// console.log(counter)
-// options.makeTest();
-// console.log(Object.keys(options).length);
 
-// const {border,bg} = options.colors // диструктаризация обьекта
-// console.log(bg)
+// arr[99] = 0;
+// console.log(arr.length)
+// console.log(arr)
 
-const answerBD = {
-    caunt:{},
-    description:{}
+arr.forEach(function(item,i,arr){
+    console.log(`${i}: ${item} внутри массива ${arr}`)
+});
+Результат
+0: 1 внутри массива 1,2,3,6,8
+1: 2 внутри массива 1,2,3,6,8
+2: 3 внутри массива 1,2,3,6,8
+3: 6 внутри массива 1,2,3,6,8
+4: 8 внутри массива 1,2,3,6,8
+
+
+arr.pop(); // удаление послденего элемента массива
+
+arr.push(10);  // добавление последнего элемента
+
+console.log(arr);
+
+for (let i = 0;i < arr.length;i++){
+    console.log(arr[i]);
 }
-const answer = +prompt('Введите количество товара которое хотите купить', ''),
-      answerDescr =prompt('Что это?', '')
-answerBD.caunt = answer
-answerBD.description = answerDescr
 
-console.log(answerBD)
+for (let value of arr){
+    console.log(value)
+}
+
+const str = prompt("","");
+
+const products = str.split(", ")
+products.sort()
+console.log(products.join('; '))
+
+
+
+const arr = [1,2,44,123,5,1,123213132,2323,43]
+
+arr.sort(cumpareNum)
+function cumpareNum(a,b){
+    return a - b;
+}
+console.log(arr)
+
+
+const str = prompt('','');
+const products = str.split(",")
+
+
+console.log(products.join('...'))
+
+const arr = [1,2,3,4,6,12]
+
+arr.forEach(function (item,i,arr){
+    console.log(`${item} имеет в себе массив ${arr}`)
+})
