@@ -88,7 +88,7 @@
 
 
 //ПРАКТИКА ЧАСТЬ 2 (СДЕЛАЛ 2 ЗАДАЧИ ИЗ 3.Самую сложную не осолил( )
-// const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '')
+//
 // const personalMovieDB = {
 //     count:numberOfFilms,
 //     movies:{},
@@ -193,66 +193,175 @@
 
 // ПРАКТИКА 3 (СДЕЛАНО 0 ИЗ 2 ЗАДАНИЙ ОЧЭН СЛОЖНА(   )
 
-let numberOfFilms
-function  start(){
-    numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '')
-    while (numberOfFilms === '' || numberOfFilms === null || isNaN(numberOfFilms)){
-        numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '')
-    }
-}
+
 // start();
 
-const personalMovieDB = {
-    count:numberOfFilms,
-    movies:{},
-    actors:{},
-    genres:[],
-    privat:false
-}
-function showMyDB(hidden){
-    if (!hidden){
-        console.log(personalMovieDB)
-    }
-}
-showMyDB();
-
-function writeYourGenres(){
-    for (let i = 1;i <= 3;i++){
-
-        const genre = [prompt(`Ваш любимый жанр под номером ${i}`, '')]
-        personalMovieDB.genres[i-1] = genre;
-    }
-}
-writeYourGenres();
-console.log(personalMovieDB); 
 
 
 
-function  rememberMyFilms(){
-    for (let i = 0;i < 2;i++){
-        const a = prompt('Один из последних просмотренных фильмов?', ''),
-            b = +prompt('На сколько оцените его?', '');
+// writeYourGenres();
+// console.log(personalMovieDB);
+//
+//
+//
+// function  rememberMyFilms(){
+//     for (let i = 0;i < 2;i++){
+//         const a = prompt('Один из последних просмотренных фильмов?', ''),
+//             b = +prompt('На сколько оцените его?', '');
+//
+//         if(a != null && b != null && a != '' && b != '' && a.length < 50){
+//             personalMovieDB.movies[a] = b;
+//             console.log('done')
+//         }else{
+//             console.log('error')
+//             i--
+//         }
+//     }
+// }
+// // rememberMyFilms();
 
-        if(a != null && b != null && a != '' && b != '' && a.length < 50){
-            personalMovieDB.movies[a] = b;
-            console.log('done')
-        }else{
-            console.log('error')
-            i--
-        }
-    }
-}
-// rememberMyFilms();
-function detectPersonalLevel(){
-    if(personalMovieDB.count < 10){
-        alert("Просмотрино довольно мало фильмов.")
-    }else if(personalMovieDB.count >= 10 && personalMovieDB.count < 30){
-        alert("Вы классический зритель")
-    }else if (personalMovieDB.count >= 30){
-        alert("Вы киноман")
-    }else {
-        alert("Произошла ошибка")
-    }
-}
 // detectPersonalLevel();
 
+// const personalMovieDB = {
+//     count:0,
+//     movies:{},
+//     actors:{},
+//     genres:[],
+//     privat:false,
+//     start:function (){
+//         personalMovieDB.count = +prompt('Сколько фильмов вы уже посмотрели?', '')
+//         while (personalMovieDB.count === '' || personalMovieDB.count === null || isNaN(personalMovieDB.count)){
+//             personalMovieDB.count = +prompt('Сколько фильмов вы уже посмотрели?', '')
+//         }
+//     },
+//     rememberMyFilms: function (){
+//     for (let i = 0;i < 2;i++){
+//         const a = prompt('Один из последних просмотренных фильмов?', ''),
+//             b = +prompt('На сколько оцените его?', '');
+//
+//         if(a != null && b != null && a != '' && b != '' && a.length < 50){
+//             personalMovieDB.movies[a] = b;
+//             console.log('done')
+//         }else{
+//             console.log('error')
+//             i--
+//         }
+//     }
+// },
+//     detectPersonalLevel:function (){
+//     if(personalMovieDB.count < 10){
+//         alert("Просмотрино довольно мало фильмов.")
+//     }else if(personalMovieDB.count >= 10 && personalMovieDB.count < 30){
+//         alert("Вы классический зритель")
+//     }else if (personalMovieDB.count >= 30){
+//         alert("Вы киноман")
+//     }else {
+//         alert("Произошла ошибка")
+//     }
+// },
+//     showMyDB:function (hidden){
+//     if (!hidden){
+//         console.log(personalMovieDB)
+//     }
+// },
+//     writeYourGenres:function (){
+//         let genre = prompt(`Ваш любимый жанр под номером ${i}`, '')
+//         for (let i = 1; i <=3;i++){
+//             if(genre === null || genre === ''){
+//                 i--
+//             }else {
+//                 genre = [prompt(`Ваш любимый жанр под номером ${i}`, '')]
+//                         personalMovieDB.genres[i - 1] = genre;
+//             }
+//         }
+//     //     for (let i = 1; i <= 3; i++) {
+//     //          genre = [prompt(`Ваш любимый жанр под номером ${i}`, '')]
+//     //         personalMovieDB.genres[i - 1] = genre;
+//     //     }
+//     // if(genre === null || genre === '') {
+//     //     for (let i = 1; i <= 3; i++) {
+//     //          genre = [prompt(`Ваш любимый жанр под номером ${i}`, '')]
+//     //         personalMovieDB.genres[i - 1] = genre;
+//     //     }
+//     // }
+//     personalMovieDB.genres.forEach(function (item,i,genre){
+//
+//         console.log(`Любимый жанр ${i+1} - это ${item}`)
+//         });
+//
+// },
+//     toggleVisibleMyBD:function (){
+//         if (personalMovieDB.privat === false){
+//             personalMovieDB.privat = true
+//         }else if(personalMovieDB.privat === true) {
+//             personalMovieDB.privat = false
+//         }
+//     }
+// }
+// // personalMovieDB.toggleVisibleMyBD()
+//
+// personalMovieDB.writeYourGenres();
+
+
+// Задачки с learnJs
+// function checkAge(age){
+//
+//     let bar = age > 18 ? true : confirm('Родители разрешили?')
+// }
+// checkAge()
+// function min(a,b){
+//     if (a > b){
+//         console.log(a)
+//     }else {
+//         console.log(b)
+//     }
+// }
+// min(2,5)
+//
+// function pow(x,n){
+//     x = parseInt(prompt("Enter x:"))
+//     n = parseInt(prompt("Enter n:"))
+//     return Math.pow(x,n)
+// }
+// console.log(pow())
+//
+// let ask = (question,yes,no) => {
+//     if (confirm(question)) yes()
+//     else no()
+// }
+// ask(
+//     'Вы согласны?',
+//     ()=>alert('Agree'),
+//     ()=>alert('decline')
+// )
+
+// const obj = {
+//     name: "John",
+//     surname:"Smith",
+//
+// }
+// obj.name = "Pete"
+// delete obj.name
+// console.log(obj)
+//
+// let schedule = {};
+// function isEmpty(obj){
+//
+//    for(let key in obj){
+//        return false
+//    }
+//    return true
+// }
+// console.log(isEmpty(schedule))
+//
+// let salaries = {
+//     John: 100,
+//     Ann: 160,
+//     Pete: 130
+// }
+//
+// let sum = 0
+// for (let key in salaries){
+//     sum += salaries[key]
+// }
+// console.log(sum)
