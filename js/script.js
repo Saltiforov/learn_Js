@@ -26,3 +26,5 @@ const john = Object.create(soldier)
 // john.__proto__ = soldier
 Object.setPrototypeOf(john,soldier); // создания прототипа объекта
 console.log(john)
+
+
