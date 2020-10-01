@@ -1,58 +1,79 @@
-"use strict"
+/* Задания на урок:
 
-const box = document.getElementById('box'),
-    btns = document.getElementsByTagName('button'),
-    circles = document.getElementsByClassName('circle'),
-    wrapper = document.querySelector('.wrapper'),
-    hearts = wrapper.querySelectorAll('.heart'),
-    oneHeart = wrapper.querySelector('.heart');
+1) Удалить все рекламные блоки со страницы (правая часть сайта)
 
+2) Изменить жанр фильма, поменять "комедия" на "драма"
 
-box.style.backgroundColor = 'blue';
-box.style.width = '500px';
+3) Изменить задний фон постера с фильмом на изображение "bg.jpg". Оно лежит в папке img.
+Реализовать только при помощи JS
 
+4) Список фильмов на странице сформировать на основании данных из этого JS файла.
+Отсортировать их по алфавиту 
 
-//
-// // box.style.cssText = `background-color: blue; width:${}px`
-box.style.cssText = `background-color: blue; width:500px`;
-//
-btns[1].style.borderRadius = '100%';
-circles[0].style.backgroundColor = 'red'
+5) Добавить нумерацию выведенных фильмов */
 
-// // for (let i = 0; i < hearts.length; i++){
-// //     hearts[i].style.backgroundColor = 'blue'
-// // }
-//
-hearts.forEach(item => {
-    item.style.backgroundColor = 'blue'
+'use strict';
+
+const movieDB = {
+    movies: [
+        "Логан",
+        "Лига справедливости",
+        "Ла-ла лэнд",
+        "Одержимость",
+        "Скотт Пилигрим против...",
+    ]
+};
+
+const adv = document.querySelectorAll('.promo__adv img'),
+      poster = document.querySelector('.promo__bg'),
+      genre = poster.querySelector('.promo__genre'),
+      movieList = document.querySelectorAll('.promo__interactive-item');
+
+adv.forEach(item =>{
+    item.remove()
 })
+genre.textContent = "драма"
+poster.style.backgroundImage = "url('img/bg.jpg')";
+movieList.forEach(item => {
+    item.remove()
+})
+movieDB.movies.sort()
+movieDB.movies.forEach(function (item,i){
+    const itemAdd = document.createElement('li')
+    itemAdd.classList.add('promo__interactive-item')
+    itemAdd.innerHTML = `
+    ${i+1}
+    ${item}
+    <div class="delete"></div>
+    `
+    document.querySelector('.promo__interactive-list').append(itemAdd)
+})
+
+
+
+
+// КОД ПЕТРЕЧЕНКА
+// const adv = document.querySelectorAll('.promo__adv img'),
+//     poster = document.querySelector('.promo__bg'),
+//     genre = poster.querySelector('.promo__genre'),
+//     movieList = document.querySelector('.promo__interactive-list');
 //
-const div = document.createElement('div')
+// adv.forEach(item => {
+//     item.remove();
+// });
 //
-// // const text = document.createTextNode('Тут был я')
+// genre.textContent = 'драма';
 //
-div.classList.add('black')
+// poster.style.backgroundImage = 'url("img/bg.jpg")';
 //
-// // wrapper.append(div); // добавление элемента в конец
-
-wrapper.appendChild(div);
-
-// wrapper.prepend(div) // добавление элемента в начало
-
-// wrapper.insertBefore(div, hearts[0]) // не актуальное добавление элементов
-
-// hearts[0].before(div) // добавление элементов как в css
-// hearts[0].after(div)
-
-// circles[0].remove() // удаление элемента
-
-// wrapper.removeChild(hearts[1]) // неактуально удаление элемента
-
-// hearts[0].replaceWith(circles[0]) // замена объекта первым указываеться то что будем менять
-// wrapper.replaceChild(circles[0] , hearts[0]) // тоже то сверху (неактуал)
-
-div.innerHTML = '<h1>Hello world!</h1>'
-
-// div.textContent = "Hello" // для записи ответа пользывателя лучше использывать это
-
-div.insertAdjacentHTML("afterend",'<h2>Hello</h2>');
+// movieList.innerHTML = "";
+//
+// movieDB.movies.sort();
+//
+// movieDB.movies.forEach((film, i) => {
+//     movieList.innerHTML += `
+//         <li class="promo__interactive-item">${i + 1} ${film}
+//             <div class="delete"></div>
+//         </li>
+//     `;
+// });
