@@ -46,8 +46,22 @@ movieDB.movies.forEach(function (item,i){
     ${item}
     <div class="delete"></div>
     `
-    document.querySelector('.promo__interactive-list').append(itemAdd)
+    document.querySelector('button').append(itemAdd)
 })
+
+// const adverEvent = document.querySelector('#advertising')
+//
+// adverEvent.addEventListener("click",() => {
+//     const imgForm = document.createElement("img")
+//     imgForm.style.backgroundImage = "url(content_1.jpg)"
+//     imgForm.style.height = '100px'
+//     document.querySelector('.promo__adv-title').append(imgForm)
+// })
+// // function movieContent(){
+// //
+// // }
+// <button>Реклама от спонсоров</button>
+// console.log(adverEvent)
 
 
 

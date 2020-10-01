@@ -20,18 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd2ba976-cc64-4802-aa85-607979b6857e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css/style.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/style.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/Logotype.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/Star.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/search.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/trash.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/content_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/content_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/content_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/mars.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sass/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
@@ -96,7 +84,7 @@
       <workItem from="1601112486206" duration="4220000" />
       <workItem from="1601206098307" duration="8179000" />
       <workItem from="1601400976795" duration="20126000" />
-      <workItem from="1601532629314" duration="2511000" />
+      <workItem from="1601532629314" duration="3538000" />
     </task>
     <servers />
   </component>
