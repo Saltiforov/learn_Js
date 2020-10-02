@@ -1,31 +1,22 @@
+// console.log(document.body)
 
-const btns = document.querySelectorAll('button'),
-      overlay = document.querySelector('.overley')
-console.log(btns)
-// btn.onclick = function (){
-//     alert('Click')
-// }
-// btn.onclick = function (){
-//     alert('Second Click')
-// }
-// let i = 0
-const deleteElement = (e) => {
-    console.log(e.currentTarget)
-    console.log(e.type)
-    // i++
-    // if(i === 1){
-    //     btn.removeEventListener('click', deleteElement)
-    // }
+// console.log(document.documentElement)
+
+// console.log(document.body.childNodes)
+
+// console.log(document.body.firstChild)
+//
+// console.log(document.body.lastChild)
+
+console.log(document.querySelector('#current').parentNode.parentNode) // получение родителя
+
+// console.log(document.querySelector('[data-current = "3"]').nextSibling)//получение следующего элемента после указателя в скобках
+// console.log(document.querySelector('[data-current = "3"]').previousSibling)
+console.log(document.querySelector('[data-current = "3"]').nextElementSibling)
+
+for (let node of document.body.childNodes){
+    if (node.nodeName === '#text'){
+        continue;
+    }
+    console.log(node)     // перебор всех элеменнтов ноды на страницы с выборкой именно текстовых значений (элементы)
 }
-const link = document.querySelector('a')
-link.addEventListener('click', (event) =>{
-    event.preventDefault()
-    console.log(event.target)
-})
-// btn.addEventListener('click', deleteElement)
-// overlay.addEventListener('click', deleteElement)
-
-btns.forEach(btn =>{
-    btn.addEventListener('click', deleteElement, {once:true})
-})
-
