@@ -1,22 +1,32 @@
-// console.log(document.body)
+// touchstart
+// touchmove
+// touchend
+// touchenter
+// touchleave
+// tuchcancel
 
-// console.log(document.documentElement)
+window.addEventListener('DOMContentLoaded', ()=>{
+    const box = document.querySelector('.box')
 
-// console.log(document.body.childNodes)
+    box.addEventListener('touchstart', (e) => {
+        e.preventDefault()
+        console.log('start')
+        console.log(e.touches)
+    })
+    box.addEventListener('touchmove', (e) => {
+        e.preventDefault()
+        console.log(e.targetTouches[0].pageX)
+    })
+    // box.addEventListener('touchend', (e) => {
+    //     e.preventDefault()
+    //     console.log('start')
+    // })
 
-// console.log(document.body.firstChild)
-//
-// console.log(document.body.lastChild)
+})
 
-console.log(document.querySelector('#current').parentNode.parentNode) // получение родителя
+// touches
+// targetTouches
+// changedTouches
 
-// console.log(document.querySelector('[data-current = "3"]').nextSibling)//получение следующего элемента после указателя в скобках
-// console.log(document.querySelector('[data-current = "3"]').previousSibling)
-console.log(document.querySelector('[data-current = "3"]').nextElementSibling)
 
-for (let node of document.body.childNodes){
-    if (node.nodeName === '#text'){
-        continue;
-    }
-    console.log(node)     // перебор всех элеменнтов ноды на страницы с выборкой именно текстовых значений (элементы)
-}
+
