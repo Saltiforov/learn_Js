@@ -1,32 +1,17 @@
-// touchstart
-// touchmove
-// touchend
-// touchenter
-// touchleave
-// tuchcancel
+"use strict"
 
-window.addEventListener('DOMContentLoaded', ()=>{
-    const box = document.querySelector('.box')
+const p = document.querySelectorAll('p')
+console.log(p)
 
-    box.addEventListener('touchstart', (e) => {
-        e.preventDefault()
-        console.log('start')
-        console.log(e.touches)
-    })
-    box.addEventListener('touchmove', (e) => {
-        e.preventDefault()
-        console.log(e.targetTouches[0].pageX)
-    })
-    // box.addEventListener('touchend', (e) => {
-    //     e.preventDefault()
-    //     console.log('start')
-    // })
-
-})
-
-// touches
-// targetTouches
-// changedTouches
+// defer сохраняет порядок загрузки джс файла, в хтмл
 
 
 
+function loadScript(src) {
+    const script = document.createElement('script');
+    script.src = src;
+    script.async = false; // добавление постепенности загрузки
+    document.body.append(script);
+}
+loadScript("js/test.js")
+loadScript("js/some.js")
