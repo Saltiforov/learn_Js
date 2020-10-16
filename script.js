@@ -1,43 +1,68 @@
-const btns = document.querySelectorAll('button');
-      wrapper = document.querySelector('.btn-block')
-// console.log(btns[0].classList.length)
-// console.log(btns[0].classList.item(0))
+const parents = document.querySelector('.btn-block'),
+      btns = document.querySelectorAll('button')
+// console.log('11111')
+// let selectedTd;
 
-// console.log(btns[1].classList.add('red, fdsdffds'))
-// console.log(btns[0].classList.remove('blue'))
-// console.log(btns[0].classList.toggle('blue'))
-
-// if (btns[1].classList.contains('red')){
-//     console.log('red');
-// }
-// contains проверка наличия элемента
-
-
-// btns[0].addEventListener('click', () =>{
-//     // if(!btns[1].classList.contains('red')) {
-//     //     btns[1].classList.add('red')
-//     // }else {
-//     //     btns[1].classList.remove('red')
-//     // }
-//     btns[1].classList.toggle('red')
-// })
-// toggle проверка на налачие события и (удаление/добавления его)
-
-// console.log(btns[0].className)
-
+// parents.onclick = function(event) {
+//     let target = event.target; // где был клик?
+//     console.dir(target)
 //
-wrapper.addEventListener('click', (event) => {
-    // console.dir(event.target)
-    if (event.target && event.target.matches("button.red")){
-         console.log('Hello')
-    }
-} )
+//     if (target.tagName !== 'BUTTON') return; // не на TD? тогда не интересует
+//
+//     highlight(target); // подсветить TD
+// };
+//
+// function highlight(td) {
+//     if (selectedTd) { // убрать существующую подсветку, если есть
+//         selectedTd.classList.remove('red');
+//     }
+//     selectedTd = td;
+//     selectedTd.classList.add('red'); // подсветить новый td
+// }
+// let backcolorAdedd
+// parents.onclick = (event) => {
+//     let target = event.target
+//     console.dir(target)
+//     if (target.tagName !== "BUTTON") return
+//     backcolor(target)
+// }
+//
+// function backcolor (target) {
+//     if (backcolorAdedd){
+//         backcolorAdedd.classList.remove('red')
+//     }
+//         backcolorAdedd = target
+//         backcolorAdedd.classList.add('red')
+//
+// }
 
-// btns.forEach(btn => {
-//     btn.addEventListener('click' ,() => {
-//         console.log('Hello')
-//     })
-// })
-const btn = document.createElement('button')
-btn.classList.add('red')
-wrapper.append(btn)
+// let bccolor
+// parents.onclick = (event) => {
+//     let target = event.target
+//     console.dir(target)
+//     if (target.tagName !== "BUTTON") return
+//     background(target)
+// }
+// const background = (td) => {
+//     if (bccolor){
+//
+//         bccolor.classList.remove('red')
+//     }else {
+//         bccolor = td
+//         bccolor.classList.add('red')
+//     }
+// }
+
+let checkList
+parents.onclick = (event) => {
+    let target = event.target
+    if (target.tagName !== "BUTTON") return
+    chengeColor(target)
+}
+const chengeColor = (targetItem) => {
+    if (checkList){
+        checkList.classList.remove('red')
+    }
+    checkList = targetItem
+    checkList.classList.add('red')
+}
