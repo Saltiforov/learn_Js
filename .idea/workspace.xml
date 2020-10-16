@@ -20,10 +20,63 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd2ba976-cc64-4802-aa85-607979b6857e" name="Default Changelist" comment="ДЕЛЕГИРОВАНИЕ!!!">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/icons/Group 5.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/icons/facebook.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/icons/instagram.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/icons/left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/icons/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/icons/right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/icons/switch.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/icons/veg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/slider/food-12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/slider/olive-oil.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/slider/paprika.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/slider/pepper.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/tabs/elite.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/tabs/hamburger.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/tabs/post.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/tabs/vegy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/facebook.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/instagram.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/switch.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/icons/veg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/slider/food-12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/slider/olive-oil.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/slider/paprika.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/slider/pepper.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/tabs/elite.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/tabs/hamburger.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/tabs/post.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/tabs/vegy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/_base.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/blocks/calculating/_calculating.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/blocks/footer/_footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/blocks/header/_header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/blocks/menu/_menu.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/blocks/modal/_modal.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/blocks/offer/_offer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/blocks/order/_order.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/blocks/preview/_preview.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/blocks/promotion/_promotion.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/blocks/sidepanel/_sidepanel.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/variables/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +94,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="d7cdae65d4946be6f1e470cacfff5d49490632b2" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -68,6 +121,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.script.js" />
+        <item itemvalue="Node.js.script.js" />
       </list>
     </recent_temporary>
   </component>
@@ -93,7 +147,7 @@
       <workItem from="1601532629314" duration="3538000" />
       <workItem from="1601662866934" duration="5143000" />
       <workItem from="1602694411008" duration="3224000" />
-      <workItem from="1602784008985" duration="8918000" />
+      <workItem from="1602784008985" duration="9434000" />
     </task>
     <task id="LOCAL-00001" summary="Практика по динамичному изменению страницы">
       <created>1602690644710</created>
@@ -130,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602836746858</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="ДЕЛЕГИРОВАНИЕ!!!">
+      <created>1602845548998</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1602845548998</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,10 +242,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="610" height="241" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601495252149" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1602836749737">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1602845554359">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1602836749737" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1602845554359" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1601117065997">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -193,16 +254,5 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="886" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1599565012927" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/script.js</url>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
