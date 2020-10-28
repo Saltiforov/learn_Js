@@ -81,11 +81,36 @@ window.addEventListener('DOMContentLoaded', function () {
             hours.innerHTML = getZero(t.hours);
             minutes.innerHTML = getZero(t.minutes);
             seconds.innerHTML = getZero(t.seconds);
+            if (t.total <= 0){
+                clearInterval(timeInterval);
+            }
         }
 
-        if (t.total <= 0){
-            clearInterval(timeInterval);
-        }
+
     }
     setClock('.timer',deadline)
+
+        // Modal
+
+    const myToggleBtns = document.querySelectorAll('[data-modal]'),
+          modal = document.querySelector('.modal'),
+          myCloseBtn = document.querySelector('[data-close]')
+    function closeModal() {
+        modal.classList.add('hide')
+        modal.classList.remove('show')
+        document.body.style.overflow = ''
+    }
+    myToggleBtns.forEach((item) =>{
+        item.addEventListener('click', (e) => {
+            modal.classList.remove('hide')
+            modal.classList.add('show')
+            document.body.style.overflow = 'hidden'
+        })
+    })
+    myCloseBtn.addEventListener('click' , closeModal)
+    modal.addEventListener('click' , (e) =>{
+        if (e.target === modal){
+            closeModal()
+        }
+    })
 });

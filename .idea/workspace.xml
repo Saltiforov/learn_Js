@@ -19,10 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd2ba976-cc64-4802-aa85-607979b6857e" name="Default Changelist" comment="Стартовый шаблон для практики Js (сделаны табы)">
-      <change afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.html" afterDir="false" />
+    <list default="true" id="fd2ba976-cc64-4802-aa85-607979b6857e" name="Default Changelist" comment="Работа с элементом window, методи scroll,clientWidth,offset">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,9 +32,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -57,7 +55,6 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -69,6 +66,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.script.js" />
+        <item itemvalue="Node.js.script.js" />
         <item itemvalue="Node.js.script.js" />
       </list>
     </recent_temporary>
@@ -96,6 +95,9 @@
       <workItem from="1601662866934" duration="5143000" />
       <workItem from="1602694411008" duration="3224000" />
       <workItem from="1602784008985" duration="8918000" />
+      <workItem from="1603717447374" duration="34000" />
+      <workItem from="1603717639427" duration="1209000" />
+      <workItem from="1603901338577" duration="4785000" />
     </task>
     <task id="LOCAL-00001" summary="Практика по динамичному изменению страницы">
       <created>1602690644710</created>
@@ -132,14 +134,7 @@
       <option name="project" value="LOCAL" />
       <updated>1602836746858</updated>
     </task>
-    <task id="LOCAL-00006" summary="Стартовый шаблон для практики Js (сделаны табы)">
-      <created>1603455718164</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1603455718164</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,18 +158,17 @@
     <MESSAGE value="Собития на моб. устройствах" />
     <MESSAGE value="async, defer" />
     <MESSAGE value="ДЕЛЕГИРОВАНИЕ!!!" />
-    <MESSAGE value="Стартовый шаблон для практики Js (сделаны табы)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Стартовый шаблон для практики Js (сделаны табы)" />
+    <option name="LAST_COMMIT_MESSAGE" value="ДЕЛЕГИРОВАНИЕ!!!" />
   </component>
   <component name="WindowStateProjectService">
     <state x="438" y="191" key="EditFileWatcherDialog" timestamp="1601481000804">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="438" y="191" key="EditFileWatcherDialog/0.0.1536.824@0.0.1536.824" timestamp="1601481000804" />
-    <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1603457746648">
+    <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1603724705889">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1603457746648" />
+    <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1603724705889" />
     <state width="610" height="241" key="GridCell.Tab.0.bottom" timestamp="1601495252149">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -191,22 +185,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="610" height="241" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601495252149" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1603455722469">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1602836749737">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603455722469" />
-    <state x="93" y="93" width="1350" height="638" key="dock-window-2" timestamp="1603455680382">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1602836749737" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1601117065997">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="93" y="93" width="1350" height="638" key="dock-window-2/0.0.1536.824@0.0.1536.824" timestamp="1603455680382" />
-    <state x="93" y="93" width="1350" height="638" key="dock-window-3" timestamp="1603455680382">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="93" y="93" width="1350" height="638" key="dock-window-3/0.0.1536.824@0.0.1536.824" timestamp="1603455680382" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1603456724717">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1603456724717" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1601117065997" />
     <state x="886" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1599565012927">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
